@@ -1,27 +1,38 @@
 import { Fragment, useEffect, useState } from "react"
 import { MoonLoader } from "react-spinners"
-import { Navbar } from "../components/components"
+import { Logo as SENF, Navbar } from "../components/components"
 import Contact from "../containers/contact"
 import {
-  Header,
   About,
-  Services,
+  Clients,
+  Header,
   Hiring,
-  Clients
+  Services
 } from "../containers/containers"
+import { classes } from "../lib/utils"
 
 export default function Home() {
   const [loading, setLoading] = useState(false)
+
   useEffect(() => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
     }, 1000)
   }, [])
+
   return (
     <Fragment>
       {loading ? (
-        <MoonLoader color={"#EF4444"} loading={loading} size={40} />
+        <div
+          className={classes(
+            "h-screen min-h-full w-screen min-w-full",
+            "flex flex-col items-center justify-center gap-5",
+            "transform overflow-hidden transition"
+          )}>
+          <SENF />
+          <MoonLoader color={"rgb(239 68 68)"} loading={loading} size={40} />
+        </div>
       ) : (
         <Fragment>
           <Navbar />
