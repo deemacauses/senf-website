@@ -15,7 +15,8 @@
     "motion": "10.13.1",
     "next": "12.2.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-spinners": "0.13.4"
   },
   "devDependencies": {
     "@tailwindcss/forms": "0.5.2",

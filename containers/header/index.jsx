@@ -8,6 +8,7 @@ import { classes, variants } from "../../lib/utils"
 export default function Header() {
   return (
     <header
+      id="الرئيسية"
       className={classes(
         "relative flex h-auto w-auto flex-row border-b-2",
         "items-center justify-center border-transparent border-b-slate-800/10",
