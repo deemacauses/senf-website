@@ -59,13 +59,13 @@ export default function Hiring() {
           className={classes(
             "flex h-full w-full max-w-xl-2 flex-col",
             "items-start justify-start gap-3 lg:gap-4",
-            "lg:items-start lg:justify-start"
+            "lg:items-center lg:justify-center"
           )}>
           <div
             className={classes(
               "flex h-auto w-full flex-col gap-3",
               "items-start justify-start md:flex-row",
-              "lg:items-start lg:justify-start lg:gap-4"
+              "lg:items-center lg:justify-center lg:gap-4"
             )}>
             <div
               className={classes(
